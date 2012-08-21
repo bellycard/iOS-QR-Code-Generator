@@ -16,7 +16,7 @@ static FileManager* _sharedFileManager = nil;
 	@synchronized([FileManager class])
 	{
 		if (!_sharedFileManager)
-			[[[self alloc] init] autorelease];
+			[[self alloc] init];
   
 		return _sharedFileManager;
 	}
